@@ -1,11 +1,16 @@
 - job:
     name: testjob
     run: testjob.yaml
+- job:
+    name: testjob
+    run: test.yaml
 
 - project:
     check:
       jobs:
         - testjob
+        - test
     gate:
       jobs:
         - testjob
+        - test
