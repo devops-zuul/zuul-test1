@@ -2,7 +2,7 @@
     name: testjob
     run: testjob.yaml
 - job:
-    name: testjob
+    name: test
     run: test.yaml
 
 - project:
