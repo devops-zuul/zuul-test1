@@ -1,11 +1,11 @@
-- project:
-    name: devops-zuul/zuul-test
-    check:
-      jobs:
-        - noop
-        - testjob
-        
 - job:
     name: testjob
-    run: testjob.yaml
+    run: playbooks/testjob.yaml
 
+- project:
+    check:
+      jobs:
+        - testjob
+    gate:
+      jobs:
+        - testjob
