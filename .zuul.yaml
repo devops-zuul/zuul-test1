@@ -7,11 +7,12 @@
     name: devops-zuul/zuul-test
     check:
       jobs:
-        - testjob1
+        - noop
+        - myjob
         
 - job:
-    name: testjob1
-    run: playbooks/testjob1.yaml
+    name: myjob
+    run: myjob.yaml
 
         
 
