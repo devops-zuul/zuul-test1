@@ -1,13 +1,7 @@
 - project:
-    check:
-      jobs:
-        - noop
-        
-- project:
     name: devops-zuul/zuul-test
     check:
       jobs:
-        - noop
         - testjob1
         
 - job:
