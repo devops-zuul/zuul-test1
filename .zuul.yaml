@@ -3,6 +3,15 @@
       jobs:
         - noop
         
+- job:
+    name: testjob1
+    run: playbooks/testjob1.yaml
+
+- project:
+    check:
+      jobs:
+        - testjob1
+        
 
 
       
