@@ -5,7 +5,7 @@
         
 - job:
     name: testjob1
-    run: playbooks/testjob1.yaml
+    run: testjob1.yaml
 
 - project:
     check:
