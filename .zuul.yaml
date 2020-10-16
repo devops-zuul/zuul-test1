@@ -8,11 +8,11 @@
     check:
       jobs:
         - noop
-        - myjob
+        - testjob1
         
 - job:
-    name: myjob
-    run: myjob.yaml
+    name: testjob1
+    run: testjob1.yaml
 
         
 
