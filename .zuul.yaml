@@ -7,4 +7,11 @@
       jobs:
         - testjob
         
-    
+ - project:
+    check:
+      jobs:
+        - noop
+        
+
+      
+        
